@@ -1,0 +1,9 @@
+3/26/2022 22:48:440 -> UncaughtException event. Error: Error: connect ECONNREFUSED 127.0.0.1:5432
+3/26/2022 22:48:467 -> UncaughtException event. Error: Error: connect ECONNREFUSED 127.0.0.1:5432
+3/26/2022 22:48:468 -> UncaughtException event. Error: Error: connect ECONNREFUSED 127.0.0.1:5432
+3/27/2022 22:16:781 -> UncaughtException event. Error: error: terminating connection due to administrator command
+3/27/2022 22:16:883 -> UncaughtException event. Error: Error: Connection terminated unexpectedly
+3/27/2022 22:16:883 -> PostgreSql ERROR: error: terminating connection due to administrator command
+3/27/2022 22:16:884 -> UncaughtException event. Error: error: terminating connection due to administrator command
+3/27/2022 22:16:885 -> PostgreSql ERROR: Error: Connection terminated unexpectedly
+3/27/2022 22:16:887 -> UncaughtException event. Error: Error: Connection terminated unexpectedly

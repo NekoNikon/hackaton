@@ -1,0 +1,64 @@
+{
+  "name": "iupcweb",
+  "version": "1.0.0",
+  "description": "Web, Websocket, GraphQL IUPC Web",
+  "main": "server.js",
+  "private": true,
+  "keywords": [],
+  "license": "ISC",
+  "author": {
+    "name": "Ruslan Umarov UmarovRA@zik.kz",
+    "successor": "Bimagambet Sagyndyk"
+  },
+  "dependencies": {
+    "@graphql-tools/graphql-file-loader": "^6.2.5",
+    "@graphql-tools/load": "^6.2.5",
+    "@graphql-tools/schema": "^7.0.0",
+    "apollo-server": "^2.18.0",
+    "apollo-server-express": "^2.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-pg-simple": "^6.2.1",
+    "dataloader": "^2.0.0",
+    "date-and-time": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "express-session": "^1.17.1",
+    "express-ws": "^4.0.0",
+    "graphql": "^15.4.0",
+    "graphql-subscriptions": "^1.1.0",
+    "graphql-tools": "^6.2.3",
+    "graphql-type-bigint": "^1.0.0",
+    "graphql-type-json": "^0.3.2",
+    "graphql.macro": "^1.4.2",
+    "ini": "^2.0.0",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.3.3",
+    "pkg": "^5.5.2",
+    "serve-favicon": "^2.5.0",
+    "subscriptions-transport-ws": "^0.9.18",
+    "ws": "^7.3.1"
+  },
+  "pkg": {
+    "scripts": [
+      "src/**/*.js",
+      "config/**/*.js"
+    ],
+    "assets": [
+      "build/**/*",
+      "SSL/**/*"
+    ]
+  },
+  "bin": "server.js",
+  "scripts": {
+    "buildl": "rm -rf ./build && cd ../client && npm run build && cp -r ./build ../srv/build && cd ../srv && npm start" ,
+    "build": "(if exist d:\\SD2\\srv\\build rmdir d:\\SD2\\srv\\build /s /q)  && cd D:\\SD2\\client && npm run build && xcopy build\\*.* D:\\SD2\\srv\\build\\ /E /K /D /H /Y && cd D:\\SD2\\srv && npm start",
+	"start": "nodemon server.js",
+    "build-exe": "pkg . --targets node14-win-x64"
+  }
+}
